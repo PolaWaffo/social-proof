@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+--Dark_Magenta: hsl(300, 43%, 22%);
+--Soft_Pink: hsl(333, 80%, 67%);
+--Grayish_Magenta: hsl(303, 10%, 53%);
+--Grayish_Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+}
+html{
+    font-size: 62.5%;
+    font-family: "League Spartan", sans-serif;
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: 
+    url(../images/bg-pattern-top-desktop.svg) no-repeat  left / cover,
+    url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right / cover,
+    var(--White);
+}
+.container{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+}
+.section-content{
+    display: grid;
+    gap: 2rem;
+    
+
+}
+.top-left h1{
+    color: var(--Dark_Magenta);
+    font-size: 6rem;
+    font-weight: bolder;
+}
+.top-left p{
+    color: var(--Dark_Magenta);
+    opacity: .6;
+    font-size: 1.8rem;
+}
+.top-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    color: var(--Dark_Magenta);
+    font-weight: bold;
+   
+}
+.review,.guru,.best{
+    padding: 1.3rem;
+    background-color: var(--Grayish_Magenta);
+    border-radius: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+   
+    
+  
+    
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--Dark_Magenta);
+    color: var(--White);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.card-header img{
+    width: 6rem;
+    border-radius: 50%;
+}
+.card-header{
+    display: flex;
+    gap: 1rem;
+
+}
+.card2{
+    margin-top: 1rem;
+}
+.card3{
+    margin-top: 3rem;
+}
+.card-header h4{
+    color: var(--Soft_Pink);
+    margin-top: -1rem;
+   
+}
+.card p{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+@media (min-width:768px){
+    .container{
+        max-width: 768px;
+    }
+    .top h1{
+        font-size: 5rem;
+    }
+    .top p{
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2rem;
+        
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+    }
+   
+    .top-right{
+        margin-top: 4rem;
+       
+        white-space: nowrap;
+        
+    }
+    .card p{
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+    .guru{
+        margin-left: 3rem;
+    } 
+    .best{
+        margin-left: 6rem;
+    }
+   
+    .bottom{
+        flex-direction: row;
+    }
+   
+   
+    .card2{
+        margin-top: 1rem;
+    }   .card2{
+        margin-top: 1rem;
+    }
+    .card3{
+        margin-top: 3rem;
+    }
+    .card3{
+        margin-top: 3rem;
+    }
+    .review,.guru,.best{
+        flex-direction: row;
+    
+    }
+}
