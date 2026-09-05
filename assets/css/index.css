@@ -18,10 +18,11 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: 
-    url(../images/bg-pattern-top-desktop.svg) no-repeat  left / cover,
-    url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right / cover,
+    url(../images/bg-pattern-top-desktop.svg) no-repeat  top / cover,
+    url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom / cover,
     var(--White);
 }
+
 .container{
     max-width: 300px;
     display: flex;
@@ -134,6 +135,9 @@ body{
        
         white-space: nowrap;
         
+    }
+    .top-left p{
+        margin-top: -3rem;
     }
     .card p{
         font-size: 1.2rem;
